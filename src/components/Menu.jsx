@@ -8,7 +8,7 @@ const Menu = ({ isOpen, setIsOpen }) => {
 
   return (
     <>
-      <button onClick={() => setIsOpen(!isOpen)}>
+      <button onClick={() => setIsOpen(!isOpen)} className="md:hidden">
         {isOpen ? <img src={close} alt="close menu" /> : <img src={open} alt="open menu" />}
       </button>
     </>
