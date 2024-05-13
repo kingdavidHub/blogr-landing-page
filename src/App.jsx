@@ -1,8 +1,9 @@
-import Designed from "./components/Designed";
-import Footer from "./components/Footer";
-import Free from "./components/Free";
 import Header from "./components/Header";
 import Showcase from "./components/Showcase";
+import Designed from "./components/Designed";
+import State from "./components/State";
+import Free from "./components/Free";
+import Footer from "./components/Footer";
 import "./style.css";
 
 const App = () => {
@@ -11,6 +12,7 @@ const App = () => {
       <Header />
       <Showcase />
       <Designed />
+      <State />
       <Free />
       <Footer />
     </>
