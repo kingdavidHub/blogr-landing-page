@@ -227,12 +227,12 @@ p {
   top: -20%;
   left: 50%;
   transform: translateX(-50%);
-  max-width: 500px;
+  width: 350px;
 }
 
 @media (min-width: 768px) {
   .state .state-img {
-    width: 500px;
+    width: 400px;
     left: 0;
     transform: none;
   }

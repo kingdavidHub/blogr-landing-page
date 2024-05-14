@@ -15,12 +15,11 @@ const State = () => {
           </div>
         </div>
 
-        <div className="pt-80 px-5 md:py-20 ">
+        <div className="pt-80 pb-16 px-5 md:py-20 ">
           <h2 className="text-center font-bold text-3xl lg:text-4xl 2xl:text-5xl mb-5 text-white md:text-left md:text-nowrap">
             State of the Art Infrastructure
           </h2>
           <p>
-            {" "}
             With reliability and speed in mind, worldwide data centers provide
             the backbone for ultra-fast connectivity. This ensures your site
             will load instantly, no matter where your readers are, keeping your
