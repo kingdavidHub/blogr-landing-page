@@ -22,7 +22,7 @@
     hsl(353, 100%, 62%)
   );
   --background-graident-fallback: hsl(13, 100%, 72%);
-  --background-gradient-very-dark-gray-blue:  hsl(237, 17%, 21%);
+  --background-gradient-very-dark-gray-blue: hsl(237, 17%, 21%);
   --background-gradient-very-dark-desaturated-blue: hsl(237, 23%, 32%);
 
   --state: linear-gradient(90deg, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
@@ -98,8 +98,29 @@ p {
   align-items: center;
 }
 
+.navbar ul ul {
+  background-color: hsl(240, 7%, 94%);
+  color: var(--headings);
+  font-weight: 600;
+  padding: 10px 5rem;
+}
+
+.rotate-up {
+  transition: transform 0.3s ease;
+  transform: rotate(180deg);
+}
+
+.rotate-down {
+  transition: transform 0.3s ease;
+  transform: rotate(0deg);
+}
+
 .navbar ul li {
   margin: 10px 0;
+}
+
+.navbar .signup {
+  background-image: var(--background-graident);
 }
 
 @media (min-width: 768px) {
@@ -117,9 +138,37 @@ p {
   .navbar ul {
     flex-direction: row;
   }
+
+  .navbar ul ul {
+    position: absolute;
+    left: -10%;
+    flex-direction: column;
+    padding: 1rem 5rem 1rem 20px;
+  }
   .navbar ul li {
     color: var(--white);
     margin: 0;
+  }
+
+  .navbar ul li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .navbar ul ul li {
+    color: var(--very-dark-grayish-blue);
+    padding: 10px;
+  }
+
+  .navbar ul ul li:hover {
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .navbar .signup {
+    background: var(--white);
+    color: var(--light-red);
   }
 }
 
@@ -147,6 +196,17 @@ p {
     background-size: cover;
     background-repeat: no-repeat;
   }
+
+  .signup:hover,
+  .showcase ul li:nth-child(1) button:hover {
+    background-color: hsla(0, 0%, 100%, 0.164);
+    color: var(--white);
+  }
+
+  .showcase ul li:nth-child(2) button:hover {
+    background-color: var(--white);
+    color: var(--light-red);
+  }
 }
 
 @media (min-width: 1024px) {
@@ -162,7 +222,7 @@ p {
   border-radius: 0 100px 0 100px;
   margin: 100px 0 50px;
 }
-.state .state-img{
+.state .state-img {
   position: absolute;
   top: -20%;
   left: 50%;

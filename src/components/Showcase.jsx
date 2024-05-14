@@ -13,12 +13,12 @@ const Showcase = () => {
           </p>
           <ul className="flex items-center">
             <li className="mx-1 my-5">
-              <button className="btn-light bg-white py-2 px-4 rounded-full">
+              <button className="btn-light bg-white py-2 px-4 rounded-full showcase-btn1-active">
                 Start for Free
               </button>
             </li>
             <li className="mx-1 my-5">
-              <button className="border border-white py-2 px-4  rounded-full  text-white">
+              <button className="border border-white py-2 px-4  rounded-full text-white showcase-btn2-active font-bold">
                 Learn More
               </button>
             </li>

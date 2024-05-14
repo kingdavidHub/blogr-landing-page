@@ -4,12 +4,15 @@ import close from "../images/icon-close.svg";
 
 
 
-const Menu = ({ isOpen, setIsOpen }) => {
+const Menu = ({ isOpen, setIsOpen, setActiveNavLinks }) => {
 
   return (
     <>
-      <button onClick={() => setIsOpen(!isOpen)} className="md:hidden">
-        {isOpen ? <img src={close} alt="close menu" /> : <img src={open} alt="open menu" />}
+      <button onClick={() => {
+        setIsOpen(!isOpen)
+        setActiveNavLinks(null);
+      }} className="md:hidden">
+        {isOpen ? <img src={close} className="rotate-up" alt="close menu" /> : <img src={open} className="rotate-down" alt="open menu" />}
       </button>
     </>
   );

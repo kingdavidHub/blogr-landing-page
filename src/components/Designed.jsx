@@ -10,7 +10,7 @@ const Designed = () => {
           Designed for the future
         </h2>
         <div
-          className="flex flex-col-reverse md:grid md:grid-cols-2 md:gap-5 md:items-center text-center md:text-left lg:max-w-5xl
+          className="flex flex-col-reverse md:grid md:grid-cols-2 md:gap-5 md:items-center text-center md:text-left lg  :max-w-5xl
         xl:max-2-7xl lg:mx-auto"
         >
           <div className="mt-10">
